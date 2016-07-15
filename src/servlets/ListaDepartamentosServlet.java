@@ -43,7 +43,7 @@ public class ListaDepartamentosServlet extends HttpServlet {
 		ClientConfig config = new ClientConfig();		
 		Client client = ClientBuilder.newClient(config);
 		WebTarget target = client.target(
-				"http://localhost:8080/SergioSandraIvanWebServices/rest/");
+				"http://sergiosandraivanwebservices.mybluemix.net/SergioSandraIvanWebServices/rest/");
 		
 		List<Departamento> respuesta = target.path("departamentos/lista")
 			.request()
